@@ -1,5 +1,13 @@
 import ProductGrid from '@/components/ProductGrid';
 
+const categories = ['electronics', 'accessories', 'fashion', 'home'];
+
+export function generateStaticParams() {
+  return categories.map((slug) => ({
+    slug,
+  }));
+}
+
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const categoryName = slug.charAt(0).toUpperCase() + slug.slice(1).replace('-', ' ');
