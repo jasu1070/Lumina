@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   // GitHub Pages deployment settings
   output: 'export',
   basePath: '/Lumina',
+  trailingSlash: true,
   // Allow access to remote image placeholder.
   images: {
     unoptimized: true,

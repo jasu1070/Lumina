@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ProductCard from './ProductCard';
 import { Product } from '@/store/useStore';
 
@@ -21,12 +22,12 @@ export default function ProductGrid() {
             <span className="text-secondary font-semibold tracking-wider uppercase text-sm">Featured Collection</span>
             <h2 className="text-3xl md:text-4xl font-bold text-primary">Trending Products</h2>
           </div>
-          <a href="/shop" className="text-secondary font-medium hover:underline flex items-center gap-2">
+          <Link href="/shop" className="text-secondary font-medium hover:underline flex items-center gap-2">
             View All Products
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
