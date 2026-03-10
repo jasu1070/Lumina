@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "clean": "next clean",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -t -d out"
+    "deploy": "gh-pages --dotfiles -d out"
   },
   "dependencies": {
     "@google/genai": "^1.17.0",
