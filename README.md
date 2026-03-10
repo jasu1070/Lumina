@@ -5,7 +5,7 @@
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
-
+https://jasu1070.github.io/Lumina/
 
 
 ## Run Locally
